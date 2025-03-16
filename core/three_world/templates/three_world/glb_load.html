@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three.js GLB Example</title>
+    
+    <!-- import-map으로 'three' 경로를 CDN으로 지정 -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.174.0/build/three.module.js"
+            }
+        }
+    </script>
+</head>
+<body>
+    <script type="module" src="{% static 'three_glb_load_js/three_glb_load.js' %}"></script>
+</body>
+</html>
